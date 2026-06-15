@@ -244,3 +244,6 @@ RSI2 at 67 — approaching sell zone
 ## Entry 81 — 2026-06-15 22:11:34
 New peak: ,200 — trail stop ,157
 
+## Entry 82 — 2026-06-15 22:11:34
+RSI2 hit 86 — sell signal!
+
