@@ -28,3 +28,6 @@ Paper trade opened at resistance zone
 ## Entry 9 — 2026-06-15 22:11:31
 Unrealised PnL at +1.8% — trailing stop active
 
+## Entry 10 — 2026-06-15 22:11:32
+Volume spike detected on 15m candle
+
