@@ -67,3 +67,6 @@ Entry at ,450 — stops set
 ## Entry 22 — 2026-06-15 22:11:32
 Peak price updated to ,100
 
+## Entry 23 — 2026-06-15 22:11:32
+Hard stop at ,101 (-2%)
+
