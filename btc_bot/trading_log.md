@@ -58,3 +58,6 @@ Bot idle — waiting for RSI alignment
 ## Entry 19 — 2026-06-15 22:11:32
 Price above MA200 — trend filter active
 
+## Entry 20 — 2026-06-15 22:11:32
+RSI2 at 12 — strong buy zone
+
