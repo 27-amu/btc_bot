@@ -37,3 +37,6 @@ RSI2 crossed 85 — sell signal triggered
 ## Entry 12 — 2026-06-15 22:11:32
 Trade closed with +2.3% profit
 
+## Entry 13 — 2026-06-15 22:11:32
+Win rate updated: 91.2%
+
