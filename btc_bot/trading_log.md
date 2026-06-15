@@ -118,3 +118,6 @@ Drawdown since session start: -0.3%
 ## Entry 39 — 2026-06-15 22:11:33
 Stop hits this session: 1
 
+## Entry 40 — 2026-06-15 22:11:33
+Session win rate: 88.9%
+
