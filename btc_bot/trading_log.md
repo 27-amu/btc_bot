@@ -49,3 +49,6 @@ BTC retested MA200 as support
 ## Entry 16 — 2026-06-15 22:11:32
 RSI divergence spotted on 15m chart
 
+## Entry 17 — 2026-06-15 22:11:32
+Trailing stop tightened after new peak
+
