@@ -148,3 +148,6 @@ RSI2 normalising from oversold
 ## Entry 49 — 2026-06-15 22:11:33
 MA200 slope positive — uptrend intact
 
+## Entry 50 — 2026-06-15 22:11:33
+15m candle closed above prior high
+
