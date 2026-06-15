@@ -166,3 +166,6 @@ No trade — price below MA200
 ## Entry 55 — 2026-06-15 22:11:33
 Downtrend filter blocked buy signal
 
+## Entry 56 — 2026-06-15 22:11:33
+Waiting for price to reclaim MA200
+
