@@ -94,3 +94,6 @@ RSI7 recovery from 28 to 36
 ## Entry 31 — 2026-06-15 22:11:32
 Bot restarted after maintenance window
 
+## Entry 32 — 2026-06-15 22:11:32
+API rate limit respected — ccxt throttling
+
