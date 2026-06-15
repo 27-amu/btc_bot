@@ -211,3 +211,6 @@ Candle fetch latency: 180ms
 ## Entry 70 — 2026-06-15 22:11:34
 Next check in 60 seconds
 
+## Entry 71 — 2026-06-15 22:11:34
+RSI2 at 18 — approaching buy threshold
+
