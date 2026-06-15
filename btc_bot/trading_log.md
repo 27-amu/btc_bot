@@ -247,3 +247,6 @@ New peak: ,200 — trail stop ,157
 ## Entry 82 — 2026-06-15 22:11:34
 RSI2 hit 86 — sell signal!
 
+## Entry 83 — 2026-06-15 22:11:34
+Closed at ,180 — +2.05% ✓
+
