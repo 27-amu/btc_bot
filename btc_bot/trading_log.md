@@ -154,3 +154,6 @@ MA200 slope positive — uptrend intact
 ## Entry 51 — 2026-06-15 22:11:33
 BTC volume: 12,400 BTC in last hour
 
+## Entry 52 — 2026-06-15 22:11:33
+RSI7 at 52 — neutral zone
+
