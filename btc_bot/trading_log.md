@@ -100,3 +100,6 @@ API rate limit respected — ccxt throttling
 ## Entry 33 — 2026-06-15 22:11:32
 OHLCV data fetched: 250 candles
 
+## Entry 34 — 2026-06-15 22:11:33
+Indicators recalculated on new close
+
