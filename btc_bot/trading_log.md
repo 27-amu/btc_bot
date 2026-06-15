@@ -124,3 +124,6 @@ Session win rate: 88.9%
 ## Entry 41 — 2026-06-15 22:11:33
 New high watermark: ,540
 
+## Entry 42 — 2026-06-15 22:11:33
+RSI2 oversold: 8.4
+
