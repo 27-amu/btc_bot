@@ -13,3 +13,6 @@ Trailing stop updated to new peak price
 ## Entry 4 — 2026-06-15 22:11:31
 Hard stop-loss at -2% from entry
 
+## Entry 5 — 2026-06-15 22:11:31
+RSI7 confirmed oversold below 35
+
