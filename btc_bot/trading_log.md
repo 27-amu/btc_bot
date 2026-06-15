@@ -55,3 +55,6 @@ Trailing stop tightened after new peak
 ## Entry 18 — 2026-06-15 22:11:32
 Bot idle — waiting for RSI alignment
 
+## Entry 19 — 2026-06-15 22:11:32
+Price above MA200 — trend filter active
+
