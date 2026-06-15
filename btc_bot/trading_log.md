@@ -274,3 +274,6 @@ Triple RSI filter reducing false signals
 ## Entry 91 — 2026-06-15 22:11:35
 Hard stop triggered once in 49 trades
 
+## Entry 92 — 2026-06-15 22:11:35
+Risk-adjusted return looking solid
+
