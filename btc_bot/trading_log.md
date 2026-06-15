@@ -76,3 +76,6 @@ Trailing stop at ,039 (-1.5% from peak)
 ## Entry 25 — 2026-06-15 22:11:32
 RSI2 at 88 — exit signal confirmed
 
+## Entry 26 — 2026-06-15 22:11:32
+Sold at ,320 — +1.29% gain
+
