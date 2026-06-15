@@ -112,3 +112,6 @@ BTC consolidating near K support
 ## Entry 37 — 2026-06-15 22:11:33
 Paper balance: ,842 USDT
 
+## Entry 38 — 2026-06-15 22:11:33
+Drawdown since session start: -0.3%
+
