@@ -178,3 +178,6 @@ Gap closed — price back above MA200
 ## Entry 59 — 2026-06-15 22:11:33
 Buy conditions re-evaluating
 
+## Entry 60 — 2026-06-15 22:11:34
+RSI2 spiked to 92 — extreme overbought
+
