@@ -1,5 +1,7 @@
 # ₿ BTC/USDT Automated Trading Bot
 
+> Automated crypto paper trading bot for BTC/USDT on Binance.
+
 <!-- ═══════════════════════════════════════════════════════════════════════
      CI / CD
 ════════════════════════════════════════════════════════════════════════ -->
