@@ -184,3 +184,6 @@ RSI2 spiked to 92 — extreme overbought
 ## Entry 61 — 2026-06-15 22:11:34
 Sell triggered by RSI2 signal
 
+## Entry 62 — 2026-06-15 22:11:34
+Exit price: ,100 — +2.1% net
+
