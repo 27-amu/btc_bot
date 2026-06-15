@@ -61,3 +61,6 @@ Price above MA200 — trend filter active
 ## Entry 20 — 2026-06-15 22:11:32
 RSI2 at 12 — strong buy zone
 
+## Entry 21 — 2026-06-15 22:11:32
+Entry at ,450 — stops set
+
