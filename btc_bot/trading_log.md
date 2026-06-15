@@ -142,3 +142,6 @@ Peak updated: ,900
 ## Entry 47 — 2026-06-15 22:11:33
 Trailing stop raised to ,866
 
+## Entry 48 — 2026-06-15 22:11:33
+RSI2 normalising from oversold
+
