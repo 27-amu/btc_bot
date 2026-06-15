@@ -220,3 +220,6 @@ RSI7 at 33 — one condition met
 ## Entry 73 — 2026-06-15 22:11:34
 RSI14 at 39 — second condition met
 
+## Entry 74 — 2026-06-15 22:11:34
+Price at ,800, MA200 at ,400 ✓
+
