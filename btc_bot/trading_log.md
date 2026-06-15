@@ -88,3 +88,6 @@ Candle analysis: strong bullish engulfing
 ## Entry 29 — 2026-06-15 22:11:32
 MA200 currently at ,200
 
+## Entry 30 — 2026-06-15 22:11:32
+RSI7 recovery from 28 to 36
+
