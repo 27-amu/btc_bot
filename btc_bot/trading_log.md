@@ -283,3 +283,6 @@ Backtest matches live paper results
 ## Entry 94 — 2026-06-15 22:11:35
 Strategy performing within expected range
 
+## Entry 95 — 2026-06-15 22:11:35
+Logging session stats to trade history
+
