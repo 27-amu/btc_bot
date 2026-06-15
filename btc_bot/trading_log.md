@@ -175,3 +175,6 @@ MA200 at ,800 — price at ,200
 ## Entry 58 — 2026-06-15 22:11:33
 Gap closed — price back above MA200
 
+## Entry 59 — 2026-06-15 22:11:33
+Buy conditions re-evaluating
+
