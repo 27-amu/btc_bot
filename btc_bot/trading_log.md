@@ -16,3 +16,6 @@ Hard stop-loss at -2% from entry
 ## Entry 5 — 2026-06-15 22:11:31
 RSI7 confirmed oversold below 35
 
+## Entry 6 — 2026-06-15 22:11:31
+RSI14 crossed below 40 — all 3 RSI aligned
+
