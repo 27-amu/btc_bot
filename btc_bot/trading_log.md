@@ -145,3 +145,6 @@ Trailing stop raised to ,866
 ## Entry 48 — 2026-06-15 22:11:33
 RSI2 normalising from oversold
 
+## Entry 49 — 2026-06-15 22:11:33
+MA200 slope positive — uptrend intact
+
