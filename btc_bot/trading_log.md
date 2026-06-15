@@ -229,3 +229,6 @@ All 4 buy conditions satisfied
 ## Entry 76 — 2026-06-15 22:11:34
 Buy order simulated at ,810
 
+## Entry 77 — 2026-06-15 22:11:34
+Stop-loss: ,474 | Trail ref: ,854
+
