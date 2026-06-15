@@ -265,3 +265,6 @@ Total gains: +,024 on K paper
 ## Entry 88 — 2026-06-15 22:11:35
 MA200 holding as dynamic support
 
+## Entry 89 — 2026-06-15 22:11:35
+RSI2 mean-reversion strategy confirmed
+
