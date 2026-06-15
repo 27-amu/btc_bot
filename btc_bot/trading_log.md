@@ -280,3 +280,6 @@ Risk-adjusted return looking solid
 ## Entry 93 — 2026-06-15 22:11:35
 Backtest matches live paper results
 
+## Entry 94 — 2026-06-15 22:11:35
+Strategy performing within expected range
+
