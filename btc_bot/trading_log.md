@@ -238,3 +238,6 @@ Open trade — watching RSI2 for exit
 ## Entry 79 — 2026-06-15 22:11:34
 RSI2 climbed to 45 — still holding
 
+## Entry 80 — 2026-06-15 22:11:34
+RSI2 at 67 — approaching sell zone
+
