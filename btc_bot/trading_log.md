@@ -82,3 +82,6 @@ Sold at ,320 — +1.29% gain
 ## Entry 27 — 2026-06-15 22:11:32
 Trade #47 logged — W:43 L:4
 
+## Entry 28 — 2026-06-15 22:11:32
+Candle analysis: strong bullish engulfing
+
