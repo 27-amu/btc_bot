@@ -10,3 +10,6 @@ MA200 acting as strong support level
 ## Entry 3 — 2026-06-15 22:11:31
 Trailing stop updated to new peak price
 
+## Entry 4 — 2026-06-15 22:11:31
+Hard stop-loss at -2% from entry
+
