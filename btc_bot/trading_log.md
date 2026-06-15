@@ -130,3 +130,6 @@ RSI2 oversold: 8.4
 ## Entry 43 — 2026-06-15 22:11:33
 All conditions met — executing buy
 
+## Entry 44 — 2026-06-15 22:11:33
+Spent ,299 USDT, got 0.1523 BTC
+
