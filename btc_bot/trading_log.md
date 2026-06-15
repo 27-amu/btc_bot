@@ -253,3 +253,6 @@ Closed at ,180 — +2.05% ✓
 ## Entry 84 — 2026-06-15 22:11:34
 Trade #49 — Win #45
 
+## Entry 85 — 2026-06-15 22:11:34
+Win rate: 91.8% across 49 trades
+
