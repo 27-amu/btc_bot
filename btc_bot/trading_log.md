@@ -205,3 +205,6 @@ Bot health check: all systems nominal
 ## Entry 68 — 2026-06-15 22:11:34
 Binance API ping: 42ms
 
+## Entry 69 — 2026-06-15 22:11:34
+Candle fetch latency: 180ms
+
