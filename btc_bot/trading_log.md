@@ -151,3 +151,6 @@ MA200 slope positive — uptrend intact
 ## Entry 50 — 2026-06-15 22:11:33
 15m candle closed above prior high
 
+## Entry 51 — 2026-06-15 22:11:33
+BTC volume: 12,400 BTC in last hour
+
