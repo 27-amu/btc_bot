@@ -103,3 +103,6 @@ OHLCV data fetched: 250 candles
 ## Entry 34 — 2026-06-15 22:11:33
 Indicators recalculated on new close
 
+## Entry 35 — 2026-06-15 22:11:33
+No signal — RSI14 at 45, above threshold
+
