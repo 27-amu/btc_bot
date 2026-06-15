@@ -46,3 +46,6 @@ New session started — balance reset to paper funds
 ## Entry 15 — 2026-06-15 22:11:32
 BTC retested MA200 as support
 
+## Entry 16 — 2026-06-15 22:11:32
+RSI divergence spotted on 15m chart
+
