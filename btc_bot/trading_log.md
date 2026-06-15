@@ -214,3 +214,6 @@ Next check in 60 seconds
 ## Entry 71 — 2026-06-15 22:11:34
 RSI2 at 18 — approaching buy threshold
 
+## Entry 72 — 2026-06-15 22:11:34
+RSI7 at 33 — one condition met
+
