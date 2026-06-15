@@ -40,3 +40,6 @@ Trade closed with +2.3% profit
 ## Entry 13 — 2026-06-15 22:11:32
 Win rate updated: 91.2%
 
+## Entry 14 — 2026-06-15 22:11:32
+New session started — balance reset to paper funds
+
