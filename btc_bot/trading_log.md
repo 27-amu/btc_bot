@@ -106,3 +106,6 @@ Indicators recalculated on new close
 ## Entry 35 — 2026-06-15 22:11:33
 No signal — RSI14 at 45, above threshold
 
+## Entry 36 — 2026-06-15 22:11:33
+BTC consolidating near K support
+
