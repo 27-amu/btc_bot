@@ -163,6 +163,26 @@ def execute_sell(price: float, reason: str = "RSI SIGNAL") -> None:
     log(f"STATS       Balance ${portfolio['usdt']:>10,.2f} | Trades {total} | Win Rate {win_rate:.1f}% | W:{portfolio['wins']} L:{portfolio['losses']} | Stops hit: {portfolio['stop_hits']} | MaxDD {portfolio['max_drawdown']:.2f}%")
 
 # ─────────────────────────────────────────────
+# SUMMARY & EXPORT
+# ─────────────────────────────────────────────
+def _print_summary() -> None:
+    total    = portfolio['wins'] + portfolio['losses']
+    win_rate = (portfolio['wins'] / total * 100) if total else 0.0
+    log(f"Final Balance  : ${portfolio['usdt']:,.2f} USDT")
+    log(f"Total Trades   : {total}  |  Win Rate: {win_rate:.1f}%  |  Stops hit: {portfolio['stop_hits']}  |  Max Drawdown: {portfolio['max_drawdown']:.2f}%")
+
+def _export_trades_csv() -> None:
+    if not portfolio['trades']:
+        return
+    import csv
+    filename = f"trades_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+    with open(filename, 'w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=['entry', 'exit', 'pnl', 'pct', 'reason'])
+        writer.writeheader()
+        writer.writerows(portfolio['trades'])
+    log(f"Trade history saved → {filename}")
+
+# ─────────────────────────────────────────────
 # MAIN LOOP
 # ─────────────────────────────────────────────
 def run() -> None:
@@ -212,10 +232,8 @@ def run() -> None:
 
         except KeyboardInterrupt:
             log("Bot stopped.")
-            total    = portfolio['wins'] + portfolio['losses']
-            win_rate = (portfolio['wins'] / total * 100) if total else 0.0
-            log(f"Final Balance  : ${portfolio['usdt']:,.2f} USDT")
-            log(f"Total Trades   : {total}  |  Win Rate: {win_rate:.1f}%  |  Stops hit: {portfolio['stop_hits']}")
+            _print_summary()
+            _export_trades_csv()
             break
         except Exception as e:
             log(f"ERROR: {e}")
