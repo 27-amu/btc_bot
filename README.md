@@ -17,12 +17,3 @@ Automated BTC/USDT paper trading bot using a **Triple RSI (2, 7, 14) + MA200** m
 
 ---
 
-## [CareTrack AI](./caretrack-ai)
-
-Longitudinal patient monitoring and risk-alert system — portfolio demo using 100% synthetic data.
-
-- Full-stack: React frontend + Python backend
-- Docker Compose for local setup
-- Not a certified medical device — demo only
-
-→ [View project README](./caretrack-ai/README.md)
