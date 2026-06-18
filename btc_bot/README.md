@@ -1,129 +1,204 @@
 # ₿ BTC/USDT Automated Trading Bot
 
-> Automated crypto paper trading bot for BTC/USDT on Binance.
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     CI / CD
-════════════════════════════════════════════════════════════════════════ -->
 [![CI](https://github.com/27-amu/btc_bot/actions/workflows/ci.yml/badge.svg)](https://github.com/27-amu/btc_bot/actions/workflows/ci.yml)
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     GITHUB STATS
-════════════════════════════════════════════════════════════════════════ -->
-[![Stars](https://img.shields.io/github/stars/27-amu/btc_bot?style=social)](https://github.com/27-amu/btc_bot/stargazers)
-[![Forks](https://img.shields.io/github/forks/27-amu/btc_bot?style=social)](https://github.com/27-amu/btc_bot/network/members)
-[![Watchers](https://img.shields.io/github/watchers/27-amu/btc_bot?style=social)](https://github.com/27-amu/btc_bot/watchers)
-[![GitHub followers](https://img.shields.io/github/followers/27-amu?style=social&label=Follow)](https://github.com/27-amu)
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     REPO META
-════════════════════════════════════════════════════════════════════════ -->
-[![Last Commit](https://img.shields.io/github/last-commit/27-amu/btc_bot?color=brightgreen)](https://github.com/27-amu/btc_bot/commits)
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/27-amu/btc_bot)](https://github.com/27-amu/btc_bot/graphs/commit-activity)
-[![Contributors](https://img.shields.io/github/contributors/27-amu/btc_bot)](https://github.com/27-amu/btc_bot/graphs/contributors)
-[![Open Issues](https://img.shields.io/github/issues/27-amu/btc_bot)](https://github.com/27-amu/btc_bot/issues)
-[![Closed Issues](https://img.shields.io/github/issues-closed/27-amu/btc_bot?color=red)](https://github.com/27-amu/btc_bot/issues?q=is%3Aissue+is%3Aclosed)
-[![Open PRs](https://img.shields.io/github/issues-pr/27-amu/btc_bot)](https://github.com/27-amu/btc_bot/pulls)
-[![Closed PRs](https://img.shields.io/github/issues-pr-closed/27-amu/btc_bot?color=red)](https://github.com/27-amu/btc_bot/pulls?q=is%3Apr+is%3Aclosed)
-[![License](https://img.shields.io/github/license/27-amu/btc_bot)](LICENSE)
-[![Repo Size](https://img.shields.io/github/repo-size/27-amu/btc_bot)](https://github.com/27-amu/btc_bot)
-[![Code Size](https://img.shields.io/github/languages/code-size/27-amu/btc_bot)](https://github.com/27-amu/btc_bot)
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     LANGUAGE & TECH STACK
-════════════════════════════════════════════════════════════════════════ -->
-[![Top Language](https://img.shields.io/github/languages/top/27-amu/btc_bot?color=3572A5)](https://github.com/27-amu/btc_bot)
-[![Language Count](https://img.shields.io/github/languages/count/27-amu/btc_bot)](https://github.com/27-amu/btc_bot)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-2.0%2B-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![ccxt](https://img.shields.io/badge/ccxt-4.2%2B-00D4AA?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+)](https://github.com/ccxt/ccxt)
-[![Binance](https://img.shields.io/badge/Exchange-Binance-F0B90B?logo=binance&logoColor=white)](https://www.binance.com/)
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     BOT STATUS & STRATEGY
-════════════════════════════════════════════════════════════════════════ -->
+[![License](https://img.shields.io/github/license/27-amu/btc_bot)](LICENSE)
 [![Mode](https://img.shields.io/badge/Mode-Paper%20Trading-blue?logo=bitcoin&logoColor=white)]()
 [![Strategy](https://img.shields.io/badge/Strategy-Triple%20RSI%20%2B%20MA200-orange)]()
 [![Win Rate](https://img.shields.io/badge/Backtested%20Win%20Rate-~91%25-success)]()
-[![Symbol](https://img.shields.io/badge/Symbol-BTC%2FUSDT-F7931A?logo=bitcoin&logoColor=white)]()
-[![Timeframe](https://img.shields.io/badge/Timeframe-15m-blueviolet)]()
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     PROJECT STATUS
-════════════════════════════════════════════════════════════════════════ -->
-[![Maintenance](https://img.shields.io/badge/Maintained-yes-green)](https://github.com/27-amu/btc_bot)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?logo=github)](https://github.com/27-amu/btc_bot/pulls)
-[![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)](https://github.com/27-amu/btc_bot)
-[![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-ff69b4)]()
 
-<!-- ═══════════════════════════════════════════════════════════════════════
-     VISITOR COUNTER
-════════════════════════════════════════════════════════════════════════ -->
-![Visitor Count](https://komarev.com/ghpvc/?username=27-amu&repo=btc_bot&label=Profile%20Views&color=brightgreen&style=flat)
+> A paper trading bot for BTC/USDT on Binance using a **Triple RSI + MA200** mean-reversion strategy with hard stop-loss and trailing stop protection.
+
+> **Disclaimer:** This bot runs in **paper trading mode only** — it simulates trades with virtual money and never touches real funds by default.
 
 ---
 
-## Overview
+## Table of Contents
 
-A fully automated **BTC/USDT paper trading bot** powered by a **Triple RSI (2, 7, 14) + MA200 trend filter** strategy with hard stop-loss and trailing stop-loss protection.
+- [How It Works](#how-it-works)
+- [Strategy](#strategy)
+- [Quick Start](#quick-start)
+- [Docker](#docker)
+- [Configuration](#configuration)
+- [Example Output](#example-output)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-> **Disclaimer:** This bot is for educational/paper trading purposes only. It does not trade real money by default.
+---
+
+## How It Works
+
+The bot connects to Binance (read-only, no real orders) and polls the BTC/USDT 15-minute chart every 60 seconds. On each tick it:
+
+1. Fetches the last 250 candles from Binance
+2. Computes three RSI periods (2, 7, 14) and a 200-period EMA
+3. Checks **buy conditions** — only enters when all four signals align (trend + three oversold RSIs)
+4. Once in a trade, monitors **three exit paths** in priority order:
+   - Hard stop-loss → triggered if price drops 2% below entry
+   - Trailing stop → triggered if price drops 1.5% from the highest price seen since entry
+   - RSI signal exit → triggered when RSI(2) > 85 (mean-reversion complete)
+5. Logs every action with a timestamp and running P&L stats
+
+All positions are paper-only. The `portfolio` dict in memory tracks balance, BTC held, trade history, wins, losses, and stop-hit count.
 
 ---
 
 ## Strategy
 
-| Signal | Condition |
-|--------|-----------|
-| **BUY**  | Price > MA(200) AND RSI(2) < 15 AND RSI(7) < 35 AND RSI(14) < 40 |
-| **SELL** | RSI(2) > 85 OR Hard Stop (-2%) OR Trailing Stop (-1.5% from peak) |
+### Entry — BUY when all four are true
+
+| Condition | Meaning |
+|-----------|---------|
+| `Close > MA(200)` | Price is in an uptrend (macro filter) |
+| `RSI(2) < 15` | Very short-term extremely oversold |
+| `RSI(7) < 35` | Medium short-term oversold |
+| `RSI(14) < 40` | Standard RSI oversold confirmation |
+
+All four must be true simultaneously to enter. This makes entries rare but high-conviction.
+
+### Exit — SELL on the first that triggers
+
+| Condition | Meaning |
+|-----------|---------|
+| `RSI(2) > 85` | Mean reversion complete, take profit |
+| `Price ≤ Entry × 0.98` | Hard stop-loss (-2%) |
+| `Price ≤ Peak × 0.985` | Trailing stop (-1.5% from highest price) |
+
+Stop-loss checks always run **before** RSI sell to protect capital first.
 
 ---
 
 ## Quick Start
 
+### Prerequisites
+
+- Python 3.9+
+- A Binance account (free — read-only API key, no trading permissions needed for paper mode)
+
+### Install & Run
+
 ```bash
-# Clone
+# 1. Clone the repo
 git clone https://github.com/27-amu/btc_bot.git
 cd btc_bot
 
-# Install dependencies
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# Set up environment variables
-echo "BINANCE_API_KEY=your_key_here" > .env
-echo "BINANCE_SECRET_KEY=your_secret_here" >> .env
+# 3. Configure your API key (read-only is fine for paper trading)
+cp .env.example .env
+# Edit .env and fill in your Binance API key and secret
 
-# Run (paper trading — no real money)
+# 4. Run the bot
 python bot.py
+```
+
+The bot will start printing real-time status lines every 60 seconds. Press `Ctrl+C` to stop — it will print a final summary of all trades.
+
+---
+
+## Docker
+
+Run the bot in a container with a single command:
+
+```bash
+# Build the image
+docker build -t btc_bot .
+
+# Run (pass your .env file in)
+docker run --env-file .env btc_bot
+```
+
+Or with Docker Compose:
+
+```bash
+docker-compose up
 ```
 
 ---
 
 ## Configuration
 
+All settings are at the top of [bot.py](bot.py). No config file needed — edit the constants directly:
+
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `SYMBOL` | `BTC/USDT` | Trading pair |
-| `TIMEFRAME` | `15m` | Candle interval |
-| `PAPER_BALANCE` | `10,000` | Starting USDT (paper) |
-| `TRADE_SIZE` | `0.95` | Fraction of balance per trade |
-| `STOP_LOSS_PCT` | `2.0` | Hard stop-loss % below entry |
-| `TRAILING_STOP_PCT` | `1.5` | Trailing stop % below peak |
+| `TIMEFRAME` | `15m` | Candle interval (e.g. `1h`, `4h`) |
+| `PAPER_BALANCE` | `10000` | Starting virtual USDT balance |
+| `TRADE_SIZE` | `0.95` | Fraction of balance used per trade (0.95 = 95%) |
+| `CHECK_EVERY` | `60` | Seconds between each market check |
+| `RSI2_BUY` | `15` | RSI(2) threshold for buy |
+| `RSI7_BUY` | `35` | RSI(7) threshold for buy |
+| `RSI14_BUY` | `40` | RSI(14) threshold for buy |
+| `RSI2_SELL` | `85` | RSI(2) threshold for sell |
+| `MA_PERIOD` | `200` | EMA period for trend filter |
+| `STOP_LOSS_PCT` | `2.0` | Hard stop-loss % below entry price |
+| `TRAILING_STOP_PCT` | `1.5` | Trailing stop % below peak price |
+
+### Environment Variables (`.env`)
+
+```env
+BINANCE_API_KEY=your_key_here
+BINANCE_SECRET_KEY=your_secret_here
+```
+
+These are only needed to fetch market data from Binance. Since the bot never places real orders, **read-only API permissions are sufficient**.
 
 ---
 
-## Dependencies
+## Example Output
 
 ```
-ccxt>=4.2.0
-pandas>=2.0.0
-ta>=0.11.0
-python-dotenv>=1.0.0
+[2026-06-18 09:00:01] ======================================================================
+[2026-06-18 09:00:01]   BTC/USDT Triple RSI + MA200 Bot  —  PAPER TRADING
+[2026-06-18 09:00:01]   Symbol     : BTC/USDT  |  Timeframe : 15m
+[2026-06-18 09:00:01]   Buy when   : RSI(2)<15 + RSI(7)<35 + RSI(14)<40 + Price>MA(200)
+[2026-06-18 09:00:01]   Sell when  : RSI(2)>85  OR  hard stop -2.0%  OR  trailing stop -1.5%
+[2026-06-18 09:00:01]   Balance    : $10,000 USDT (paper)
+[2026-06-18 09:00:01] ======================================================================
+[2026-06-18 09:01:03] WAITING  |  $ 65,420.10 | MA200 $63,105.44 | RSI2  12.3 | RSI7  31.2 | RSI14  38.7
+[2026-06-18 09:01:03] BUY      >> Price $  65,420.10 | BTC 0.145621 | USDT left $500.00
+[2026-06-18 09:01:03] STOPS SET   Hard stop $64,111.70 (-2.0%) | Trailing kicks in at $64,438.40 (-1.5% from peak)
+[2026-06-18 09:17:45] IN TRADE | $  66,800.00 | Entry $65,420.10 | Unrealised +2.11% | Trail stop $65,798.00
+[2026-06-18 09:32:11] SELL     >> Price $  67,150.00 | PnL +$253.48 (+2.73%) | WIN | RSI SIGNAL
+[2026-06-18 09:32:11] STATS       Balance $  10,253.48 | Trades 1 | Win Rate 100.0% | W:1 L:0 | Stops hit: 0
 ```
+
+---
+
+## Project Structure
+
+```
+btc_bot/
+├── bot.py               # Main bot — all logic lives here
+├── requirements.txt     # Python dependencies
+├── .env.example         # Template for API keys
+├── Dockerfile           # Container build
+├── docker-compose.yml   # Compose config
+├── Makefile             # Convenience commands
+├── trading_log.md       # Live session logs
+├── CHANGELOG.md         # Version history
+├── CONTRIBUTING.md      # Contribution guide
+└── SECURITY.md          # Security policy
+```
+
+---
+
+## Contributing
+
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the process. Some ideas if you want to extend the bot:
+
+- Add more indicators (MACD, Bollinger Bands)
+- Support multiple trading pairs
+- Persist trade history to SQLite or CSV
+- Add a Telegram/Discord notification hook
+- Build a backtest runner using historical OHLCV data
 
 ---
 
 ## License
 
-This project is open source. See [LICENSE](LICENSE) for details.
+This project is open source under the [MIT License](LICENSE).
