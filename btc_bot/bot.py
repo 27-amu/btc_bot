@@ -57,6 +57,9 @@ portfolio = {
     'trades':       [],
     'peak_balance': float(PAPER_BALANCE),
     'max_drawdown': 0.0,
+    'streak':       0,      # positive = win streak, negative = loss streak
+    'best_trade':   0.0,
+    'worst_trade':  0.0,
 }
 
 # ─────────────────────────────────────────────
@@ -149,12 +152,19 @@ def execute_sell(price: float, reason: str = "RSI SIGNAL") -> None:
 
     if pnl >= 0:
         portfolio['wins'] += 1
+        portfolio['streak'] = max(0, portfolio['streak']) + 1
         outcome = "WIN"
     else:
         portfolio['losses'] += 1
+        portfolio['streak'] = min(0, portfolio['streak']) - 1
         outcome = "LOSS"
         if "STOP" in reason:
             portfolio['stop_hits'] += 1
+
+    if pnl > portfolio['best_trade']:
+        portfolio['best_trade'] = pnl
+    if pnl < portfolio['worst_trade']:
+        portfolio['worst_trade'] = pnl
 
     portfolio['trades'].append({
         'entry':  portfolio['entry_price'],
