@@ -2,4 +2,15 @@
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 .DS_Store
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+trades_*.csv
+bot.log
+*.log
+
