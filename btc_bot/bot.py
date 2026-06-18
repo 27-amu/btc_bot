@@ -193,8 +193,14 @@ def execute_sell(price: float, reason: str = "RSI SIGNAL") -> None:
 def _print_summary() -> None:
     total    = portfolio['wins'] + portfolio['losses']
     win_rate = (portfolio['wins'] / total * 100) if total else 0.0
-    log(f"Final Balance  : ${portfolio['usdt']:,.2f} USDT")
-    log(f"Total Trades   : {total}  |  Win Rate: {win_rate:.1f}%  |  Stops hit: {portfolio['stop_hits']}  |  Max Drawdown: {portfolio['max_drawdown']:.2f}%")
+    net_pnl  = portfolio['usdt'] - PAPER_BALANCE
+    log("=" * 70)
+    log(f"  Final Balance  : ${portfolio['usdt']:>10,.2f} USDT  (net {net_pnl:+,.2f})")
+    log(f"  Total Trades   : {total}  |  Win Rate : {win_rate:.1f}%")
+    log(f"  Wins / Losses  : {portfolio['wins']} / {portfolio['losses']}  |  Stops hit: {portfolio['stop_hits']}")
+    log(f"  Best Trade     : ${portfolio['best_trade']:+,.2f}  |  Worst Trade: ${portfolio['worst_trade']:+,.2f}")
+    log(f"  Max Drawdown   : {portfolio['max_drawdown']:.2f}%")
+    log("=" * 70)
 
 def _export_trades_csv() -> None:
     if not portfolio['trades']:
