@@ -72,11 +72,20 @@ def log(msg: str) -> None:
         with open(LOG_FILE, 'a') as f:
             f.write(line + '\n')
 
-def fetch_candles() -> pd.DataFrame:
-    ohlcv = exchange.fetch_ohlcv(SYMBOL, TIMEFRAME, limit=250)
-    df = pd.DataFrame(ohlcv, columns=['ts', 'open', 'high', 'low', 'close', 'volume'])
-    df['ts'] = pd.to_datetime(df['ts'], unit='ms')
-    return df
+def fetch_candles(retries: int = 3) -> pd.DataFrame:
+    for attempt in range(1, retries + 1):
+        try:
+            ohlcv = exchange.fetch_ohlcv(SYMBOL, TIMEFRAME, limit=250)
+            df = pd.DataFrame(ohlcv, columns=['ts', 'open', 'high', 'low', 'close', 'volume'])
+            df['ts'] = pd.to_datetime(df['ts'], unit='ms')
+            return df
+        except Exception as e:
+            if attempt == retries:
+                raise
+            wait = 2 ** attempt
+            log(f"API error (attempt {attempt}/{retries}): {e} — retrying in {wait}s")
+            time.sleep(wait)
+    raise RuntimeError("fetch_candles: all retries exhausted")
 
 def add_indicators(df: pd.DataFrame) -> pd.DataFrame:
     df['rsi2']  = ta_lib.momentum.RSIIndicator(df['close'], window=2).rsi()
