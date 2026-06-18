@@ -173,13 +173,20 @@ These are only needed to fetch market data from Binance. Since the bot never pla
 
 ```
 btc_bot/
-├── bot.py               # Main bot — all logic lives here
-├── requirements.txt     # Python dependencies
-├── .env.example         # Template for API keys
+├── bot.py               # Main bot — strategy, execution, logging
+├── backtest.py          # Run strategy against historical OHLCV data
+├── notify.py            # Slack/Discord webhook + Telegram alerts
+├── requirements.txt     # Runtime dependencies
+├── requirements-dev.txt # Dev/test dependencies
+├── pyproject.toml       # Project metadata
+├── .env.example         # Template for all env vars
 ├── Dockerfile           # Container build
 ├── docker-compose.yml   # Compose config
-├── Makefile             # Convenience commands
-├── trading_log.md       # Live session logs
+├── Makefile             # run, test, coverage, lint, docker targets
+├── tests/               # Unit tests (pytest)
+│   ├── test_bot.py
+│   └── test_backtest.py
+├── ROADMAP.md           # Planned features
 ├── CHANGELOG.md         # Version history
 ├── CONTRIBUTING.md      # Contribution guide
 └── SECURITY.md          # Security policy
