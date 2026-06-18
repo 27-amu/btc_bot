@@ -46,15 +46,17 @@ exchange = ccxt.binance({
 })
 
 portfolio = {
-    'usdt':        float(PAPER_BALANCE),
-    'btc':         0.0,
-    'in_trade':    False,
-    'entry_price': 0.0,
-    'peak_price':  0.0,
-    'wins':        0,
-    'losses':      0,
-    'stop_hits':   0,
-    'trades':      [],
+    'usdt':         float(PAPER_BALANCE),
+    'btc':          0.0,
+    'in_trade':     False,
+    'entry_price':  0.0,
+    'peak_price':   0.0,
+    'wins':         0,
+    'losses':       0,
+    'stop_hits':    0,
+    'trades':       [],
+    'peak_balance': float(PAPER_BALANCE),
+    'max_drawdown': 0.0,
 }
 
 # ─────────────────────────────────────────────
@@ -150,8 +152,15 @@ def execute_sell(price: float, reason: str = "RSI SIGNAL") -> None:
     total    = portfolio['wins'] + portfolio['losses']
     win_rate = (portfolio['wins'] / total * 100) if total else 0.0
 
+    # Update peak balance and max drawdown
+    if portfolio['usdt'] > portfolio['peak_balance']:
+        portfolio['peak_balance'] = portfolio['usdt']
+    dd = (portfolio['peak_balance'] - portfolio['usdt']) / portfolio['peak_balance'] * 100
+    if dd > portfolio['max_drawdown']:
+        portfolio['max_drawdown'] = dd
+
     log(f"SELL     >> Price ${price:>10,.2f} | PnL ${pnl:+,.2f} ({pct:+.2f}%) | {outcome} | {reason}")
-    log(f"STATS       Balance ${portfolio['usdt']:>10,.2f} | Trades {total} | Win Rate {win_rate:.1f}% | W:{portfolio['wins']} L:{portfolio['losses']} | Stops hit: {portfolio['stop_hits']}")
+    log(f"STATS       Balance ${portfolio['usdt']:>10,.2f} | Trades {total} | Win Rate {win_rate:.1f}% | W:{portfolio['wins']} L:{portfolio['losses']} | Stops hit: {portfolio['stop_hits']} | MaxDD {portfolio['max_drawdown']:.2f}%")
 
 # ─────────────────────────────────────────────
 # MAIN LOOP
