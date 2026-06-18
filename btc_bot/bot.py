@@ -11,6 +11,7 @@ import pandas as pd
 import ta as ta_lib
 import time
 import os
+import signal
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -216,7 +217,14 @@ def _export_trades_csv() -> None:
 # ─────────────────────────────────────────────
 # MAIN LOOP
 # ─────────────────────────────────────────────
+def _handle_sigterm(signum, frame) -> None:
+    log("Received SIGTERM — shutting down gracefully.")
+    _print_summary()
+    _export_trades_csv()
+    raise SystemExit(0)
+
 def run() -> None:
+    signal.signal(signal.SIGTERM, _handle_sigterm)
     log("=" * 70)
     log("  BTC/USDT Triple RSI + MA200 Bot  —  PAPER TRADING")
     log(f"  Symbol     : {SYMBOL}  |  Timeframe : {TIMEFRAME}")
@@ -255,6 +263,7 @@ def run() -> None:
                 if buy:
                     execute_buy(price)
             else:
+                # Stops always take priority over the RSI exit signal
                 stopped, stop_reason = check_stops(price)
                 if stopped:
                     execute_sell(price, reason=stop_reason)
