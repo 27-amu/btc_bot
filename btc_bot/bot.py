@@ -62,9 +62,15 @@ portfolio = {
 # ─────────────────────────────────────────────
 # HELPERS
 # ─────────────────────────────────────────────
+LOG_FILE = os.getenv('LOG_FILE', '')
+
 def log(msg: str) -> None:
-    ts = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    print(f"[{ts}] {msg}")
+    ts   = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    line = f"[{ts}] {msg}"
+    print(line)
+    if LOG_FILE:
+        with open(LOG_FILE, 'a') as f:
+            f.write(line + '\n')
 
 def fetch_candles() -> pd.DataFrame:
     ohlcv = exchange.fetch_ohlcv(SYMBOL, TIMEFRAME, limit=250)
